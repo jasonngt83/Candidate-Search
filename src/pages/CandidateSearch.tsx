@@ -3,6 +3,7 @@ import { searchGithub, searchGithubUser } from '../api/API';
 import Candidate from '../interfaces/Candidate.interface';
 import CandidateCard from '../components/CandidateCard';
 
+
 const CandidateSearch = () => {
   const [candidates, setCandidates] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,6 +16,8 @@ const CandidateSearch = () => {
     company: '',
     bio: '',
   });
+
+
 
   useEffect(() => {
     fetchCandidateList();
@@ -63,6 +66,7 @@ const CandidateSearch = () => {
 
   return (
     <div>
+      <a href='/SavedCandidates'>Potential Candidate</a>
       <h1>Candidate Search</h1>
       <CandidateCard currentCandidate={currentCandidate}></CandidateCard>
       <div className='candidate-buttons'>

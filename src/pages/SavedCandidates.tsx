@@ -20,6 +20,7 @@ const SavedCandidates = () => {
 
   return (
     <div>
+      <a href='/'>Back Home</a>
       <h1>Potential Candidates</h1>
       {candidates.length > 0
         ? (<CandidateTable candidateList={candidates} removeCandidate={removeCandidate}></CandidateTable>)

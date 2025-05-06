@@ -24,7 +24,7 @@ const CandidateTable = ({ candidateList, removeCandidate }: TableProps) => {
                     {candidateList.map((candidate, index) => (
                         <tr key={index}>
                             <td>
-                                <img src={candidate.avatar_url} alt={candidate.login} />
+                                <img width={130} height={130} src={candidate.avatar_url} alt={candidate.login} />
                             </td>
                             <td>
                                 {candidate.name

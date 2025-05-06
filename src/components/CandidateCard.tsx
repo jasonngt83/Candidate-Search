@@ -1,3 +1,4 @@
+
 import type Candidate from "../interfaces/Candidate.interface";
 
 type CandidateProps = {
